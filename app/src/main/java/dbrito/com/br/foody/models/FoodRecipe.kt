@@ -3,7 +3,7 @@ package dbrito.com.br.foody.models
 
 import com.google.gson.annotations.SerializedName
 
-data class FoodReciipe(
+data class FoodRecipe(
     @SerializedName("results")
     val results: List<Result>,
 )

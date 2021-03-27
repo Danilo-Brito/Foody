@@ -1,0 +1,23 @@
+[33mcommit 012dd403b5db7f5b31865b53e56f7c1cb0777a1c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Danilo Brito <danilomelo.brito19@gmail.com>
+Date:   Fri Mar 26 05:56:27 2021 -0300
+
+    json objects and placeholder recipe fragment to use with shimmer'
+
+[33mcommit e1d5bc626c857aa00c9f83a8f7b60bf69acd03da[m
+Author: Danilo Brito <danilomelo.brito19@gmail.com>
+Date:   Thu Mar 25 06:06:07 2021 -0300
+
+    Finish fragment_recipes layout and recipes_row
+
+[33mcommit 165044a78c5b73f40df54f25c95e8a444d78751c[m
+Author: Danilo Brito <danilomelo.brito19@gmail.com>
+Date:   Wed Mar 24 05:59:59 2021 -0300
+
+    first commit
+
+[33mcommit 7d46863251653979f810c3eadc11355ebd7cae39[m
+Author: Danilo Brito <danilomelo.brito19@gmail.com>
+Date:   Wed Mar 24 05:52:33 2021 -0300
+
+    Initial commit
