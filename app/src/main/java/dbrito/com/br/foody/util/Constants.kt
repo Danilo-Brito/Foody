@@ -1,4 +1,4 @@
-package dbrito.com.br.foody
+package dbrito.com.br.foody.util
 
 class Constants {
     companion object{
