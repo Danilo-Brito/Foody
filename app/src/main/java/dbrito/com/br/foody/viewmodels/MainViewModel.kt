@@ -1,4 +1,4 @@
-package dbrito.com.br.foody
+package dbrito.com.br.foody.viewmodels
 
 import android.app.Application
 import android.content.Context
