@@ -2,24 +2,23 @@ package dbrito.com.br.foody.ui.fragments
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
-import dbrito.com.br.foody.viewmodels.MainViewModel
 import dbrito.com.br.foody.R
 import dbrito.com.br.foody.adapters.RecipesAdapter
 import dbrito.com.br.foody.databinding.FragmentRecipesBinding
-import dbrito.com.br.foody.util.Constants.Companion.API_KEY
 import dbrito.com.br.foody.util.NetworkResult
 import dbrito.com.br.foody.util.observeOnce
+import dbrito.com.br.foody.viewmodels.MainViewModel
 import dbrito.com.br.foody.viewmodels.RecipesViewModel
-import kotlinx.android.synthetic.main.fragment_recipes.view.*
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -49,10 +48,12 @@ class RecipesFragment : Fragment() {
         binding.lifecycleOwner = this
         binding.mainViewModel = mainViewModel
 
-//        view.recyclerview.showShimmer()
-
         setupRecyclerView()
         readDatabase()
+
+        binding.recipesFab.setOnClickListener(){
+            findNavController().navigate(R.id.action_recipesFragment_to_recipesBottomSheet)
+        }
 
         return binding.root
     }
